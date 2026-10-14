@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reena S. | ECE Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #e5e7eb;
+      line-height: 1.7;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #11182b;
+      position: sticky;
+      top: 0;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .logo { color: #a5b4fc; font-size: 22px; font-weight: bold; }
+    nav { display: flex; gap: 16px; flex-wrap: wrap; }
+    a { color: #a5b4fc; text-decoration: none; }
+    nav a { color: #e5e7eb; font-size: 14px; }
+    nav a:hover, a:hover { color: #818cf8; }
+    section { padding: 65px 8%; scroll-margin-top: 70px; }
+    .hero { min-height: 390px; display: flex; flex-direction: column;
+      justify-content: center; align-items: flex-start; }
+    .tag { color: #a5b4fc; letter-spacing: 2px; font-size: 13px; }
+    h1 { font-size: clamp(34px, 6vw, 54px); margin: 12px 0; }
+    h2 { color: #a5b4fc; font-size: 28px; margin-bottom: 20px; }
+    h3 { color: #fff; margin-bottom: 8px; }
+    p { color: #cbd5e1; margin-bottom: 12px; }
+    .button { display: inline-block; background: #6366f1; color: white;
+      padding: 10px 18px; border-radius: 8px; margin: 10px 10px 0 0; }
+    .button.secondary { background: transparent; border: 1px solid #6366f1; }
+    .section-alt { background: #11182b; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit,
+      minmax(220px, 1fr)); gap: 18px; }
+    .card { background: #151e33; border: 1px solid #27334c;
+      padding: 22px; border-radius: 12px; }
+    .pill { display: inline-block; background: #202b47; color: #c7d2fe;
+      padding: 6px 12px; margin: 5px 4px 5px 0; border-radius: 20px;
+      font-size: 14px; }
+    footer { text-align: center; padding: 25px; color: #94a3b8; }
+    @media(max-width: 500px) {
+      header { padding: 16px 5%; }
+      section { padding: 45px 6%; }
+      nav { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">REENA S.</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="tag">ELECTRONICS & COMMUNICATION ENGINEERING</p>
+    <h1>Hello, I'm <span style="color:#a5b4fc">Reena.</span></h1>
+    <h3>ECE Student | Python Learner | Aspiring Engineer</h3>
+    <p>Exploring technology and building practical skills in
+      IoT, networking and emerging technologies.</p>
+    <div>
+      <a class="button" href="#projects">Explore My Projects</a>
+      <a class="button secondary" href="#contact">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about" class="section-alt">
+    <h2>About Me</h2>
+    <p>I'm an Electronics and Communication Engineering student at
+      VSB College of Engineering Technical Campus, Coimbatore.</p>
+    <p>I'm interested in learning new technologies and applying my
+      knowledge through projects, online courses and practical
+      experiences. My areas of interest include IoT, networking
+      and emerging technologies.</p>
+    <p><strong>Education:</strong> B.E. Electronics and Communication
+      Engineering</p>
+    <p><strong>CGPA:</strong> Add your latest confirmed CGPA here.</p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Technical Skills</h3>
+        <span class="pill">Python</span>
+        <span class="pill">Typing</span>
+      </div>
+      <div class="card">
+        <h3>Soft Skills</h3>
+        <span class="pill">Communication</span>
+        <span class="pill">Continuous Learning</span>
+      </div>
+      <div class="card">
+        <h3>Areas of Interest</h3>
+        <span class="pill">IoT</span>
+        <span class="pill">Networking</span>
+        <span class="pill">Emerging Technologies</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-alt">
+    <h2>My Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Skill Gap Analyzer</h3>
+        <p>A website concept designed to help learners compare their
+          existing skills with skills required for a target role
+          and identify areas for improvement.</p>
+        <p><strong>Focus:</strong> Web development and career skills</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript
+          and Firebase (where implemented)</p>
+        <a href="https://github.com/" target="_blank"
+          rel="noopener noreferrer">Add project repository →</a>
+      </div>
+      <div class="card">
+        <h3>Future ECE Project</h3>
+        <p>Planning to explore practical engineering projects
+          related to electronics, IoT and networking.</p>
+        <p>More project details will be added as they are completed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2>Certifications & Experience</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>AI & Data</h3>
+        <p>Infosys Artificial Intelligence Foundation</p>
+        <p>HP Data Science and Analytics</p>
+        <p>TCS Data Plus Overview Course</p>
+      </div>
+      <div class="card">
+        <h3>Electronics & IoT</h3>
+        <p>Mind Lister Digital Electronics Basics</p>
+        <p>Infosys IoT Edge Computing and IoT Analytics</p>
+        <p>Skill Up IoT</p>
+        <p>Coursera Engineering Circuit Analysis</p>
+      </div>
+      <div class="card">
+        <h3>Networking & Experience</h3>
+        <p>Cisco Introduction to Cyber Security</p>
+        <p>Forage Engineering Job Simulations</p>
+        <p>Vectonix Internship</p>
+        <p>Unstop Adobe Hackathon</p>
+        <p>ISTE and other learning achievements</p>
+      </div>
+    </div>
+    <p style="margin-top:18px">Add links to your actual certificates
+      when available. List only courses and certificates you have earned.</p>
+  </section>
+
+  <section id="contact" class="section-alt">
+    <h2>Let's Connect</h2>
+    <p>I'm interested in learning opportunities, internships
+      and collaborative projects.</p>
+    <p>Email: <a href="mailto:YOUR_EMAIL@example.com">
+      Add your email</a></p>
+    <p>GitHub: <a href="https://github.com/reescrh8975-lab"
+      target="_blank" rel="noopener noreferrer">Visit my GitHub</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/"
+      target="_blank" rel="noopener noreferrer">Add your LinkedIn profile</a></p>
+  </section>
+
+  <footer>
+    <p>Designed and built by Reena S. | © 2026</p>
+  </footer>
+</body>
+</html>
